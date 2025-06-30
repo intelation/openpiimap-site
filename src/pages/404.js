@@ -7,51 +7,50 @@ export default function Custom404() {
   return (
     <>
       <Head>
-        <title>404 - Page Not Found | Intelation</title>
+        <title>404 - Page Not Found | OpenPIIMap</title>
         <meta
           name="description"
-          content="The page you’re looking for doesn’t exist or has been moved. Visit our homepage to explore Intelation’s data privacy solutions."
+          content="The page you’re looking for doesn’t exist or has been moved. Visit our homepage to explore OpenPIIMap’s global privacy data coverage."
         />
         <meta
           name="keywords"
-          content="404 page, page not found, Intelation error page, broken link, missing page, redirect to homepage"
+          content="404 page, page not found, OpenPIIMap error page, missing page, privacy coverage, YAML not found"
         />
         <meta name="robots" content="noindex, follow" />
-        <link rel="canonical" href="https://www.intelation.com/404" />
+        <link rel="canonical" href="https://www.openpiimap.org/404" />
 
         {/* Open Graph Meta Tags */}
-        <meta property="og:title" content="404 - Page Not Found | Intelation" />
+        <meta property="og:title" content="404 - Page Not Found | OpenPIIMap" />
         <meta
           property="og:description"
-          content="Oops! It looks like this page no longer exists. Use the navigation or return to the homepage to get back on track."
+          content="Oops! It looks like this page no longer exists. Use the navigation or return to the homepage to explore PII and PHI definitions worldwide."
         />
-        <meta property="og:image" content="https://www.intelation.com/images/og-image-new.jpg" />
-        <meta property="og:url" content="https://www.intelation.com/404" />
+        <meta property="og:image" content="https://www.openpiimap.org/images/og-image-new.jpg" />
+        <meta property="og:url" content="https://www.openpiimap.org/404" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="404 - Page Not Found | Intelation" />
+        <meta name="twitter:title" content="404 - Page Not Found | OpenPIIMap" />
         <meta
           name="twitter:description"
-          content="We couldn't find the page you requested. Check the URL or visit our homepage to learn more about Intelation."
+          content="We couldn't find the page you requested. Check the URL or return to OpenPIIMap.org to browse our privacy coverage and YAMLs."
         />
-        <meta name="twitter:image" content="https://www.intelation.com/images/og-image-new.jpg" />
+        <meta name="twitter:image" content="https://www.openpiimap.org/images/og-image-new.jpg" />
 
         {/* JSON-LD Structured Data */}
         <script type="application/ld+json">
           {`
-      {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "404 Page - Intelation",
-        "description": "This page does not exist. Navigate to the homepage or explore Intelation's platform features.",
-        "url": "https://www.intelation.com/404"
-      }
-    `}
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "404 Page - OpenPIIMap",
+              "description": "This page does not exist. Navigate to the homepage or explore OpenPIIMap’s global coverage of PII/PHI definitions.",
+              "url": "https://www.openpiimap.org/404"
+            }
+          `}
         </script>
       </Head>
-
 
       <div id="nextjs">
         <Header />

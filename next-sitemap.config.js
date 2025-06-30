@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: 'https://www.intelation.com',
+    siteUrl: 'https://www.openpiimap.org',
     generateRobotsTxt: true,
     sitemapSize: 5000,
     changefreq: 'weekly',

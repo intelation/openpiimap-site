@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
     // Analytics acceptance logic placeholder
   };
 
-  const canonicalUrl = `https://www.intelation.com${router.asPath.split('?')[0]}`;
+  const canonicalUrl = `https://www.openpiimap.org${router.asPath.split('?')[0]}`;
 
   return (
     <>
