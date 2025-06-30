@@ -1,0 +1,184 @@
+
+
+@media (min-width: 1024px) {
+    #mainText {
+        padding-top: 30px;
+    }
+
+   
+ 
+    #keyBenefits .col-md-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #keyBenefits .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* Ensures content is evenly spaced */
+        height: 100%;
+        /* Equal height for all cards */
+        position: relative;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    #footerText {
+        font-size: 4rem;
+        /* Adjust font size for iPads */
+    }
+}
+
+@media (max-width: 991px) {
+    #footerText {
+        font-size: 4rem;
+        /* Adjust font size for iPads */
+    }
+
+    .cardC {
+        margin-bottom: 25px;
+    }
+
+    #mainText h2 {
+        font-size: 1.8rem;
+    }
+
+    #mainText p {
+        font-size: 1.4rem;
+    }
+
+    #contactForm {
+        margin-top: 50px;
+    }
+
+    #keyBenefits {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        margin-top: 30px;
+    }
+    #mainText h1{
+        margin-bottom: 25px;
+    }
+    h1 .highlight {
+        display: inline-block;
+    }
+    #mainText h2 {
+        width: 80%;
+        font-size: 1.2rem;
+    }
+    .mainRow {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .intelationText {
+        font-size: 1.8rem;
+    }
+    .firstRow {
+        padding: 40px 1rem;
+        min-height: auto
+      }
+    #footerText {
+        font-size: 2rem;
+    }
+
+    #topBg {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .logo {
+        padding-bottom: 8px;
+    }
+
+    #mainText p {
+        font-size: 1.2rem;
+    }
+
+    #contactForm {
+        margin-top: 25px;
+    }
+
+    #keyBenefits {
+        margin-top: 50px;
+    }
+
+    #footerText {
+        padding-top: 25px;
+    }
+
+    #copyRight {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2rem;
+        margin-top: 0px;
+    }
+    .actions {
+        display: block;
+    }
+    .actions .btn {
+        margin-bottom: 15px;
+        display: block;
+        max-width: 175px;
+        margin: 0 auto 15px;
+    }
+    #footeText {
+        font-size: 2rem;
+        /* Adjust font size for mobile devices */
+    }
+
+    #topBg {
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+
+    .logo {
+        padding-bottom: 8px;
+    }
+
+    #mainText p {
+        font-size: 1.2rem;
+    }
+
+    #contactForm {
+        margin-top: 25px;
+    }
+
+    #keyBenefits {
+        margin-top: 50px;
+    }
+
+    #footerText {
+        padding-top: 25px;
+    }
+
+    #copyRight {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 375px) {
+    /* only Header - logo and menu */
+    img.logo-web {
+        width: 48px;
+    }
+    p.logo-text {
+        font-size: 26px;
+    }
+    .mainNavbar  .navbar-toggler {
+        width:40px;
+        padding: 0px;
+    }
+}

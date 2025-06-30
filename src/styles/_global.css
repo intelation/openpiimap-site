@@ -1,0 +1,144 @@
+body {
+    background: url(/images/banner.png) repeat-x top center;
+    overflow-y: auto !important;
+}
+body .container-fluid {
+    max-width: 1140px;
+}
+
+h1 {
+    font-size: 2.7rem;
+    color: var(--bs-accent-sub);
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--bs-accent-sub);
+}
+
+
+.contactUs h3 {
+    color: var(--bs-primary);
+}
+
+.fillForm {
+    background-color: var(--bs-light-sub);
+    padding: 25px;
+    border-radius: var(--bs-border-radius);
+}
+
+#contactForm {
+    color: var(--bs-primary);
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: var(--bs-border-radius);
+}
+
+#contactForm .btn {
+    background: var(--bs-primary);
+    color: #fff;
+    background-image: url('/images/arrow.png');
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 20px;
+}
+
+#contactForm .btn:hover {
+    background-color: var(--bs-hover-sub);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background: var(--bs-footer); 
+    color:var(--bs-card-bg); 
+}
+footer a {
+    text-decoration: none;
+}
+footer .footerSocialIcons a:hover {
+    color: #ffffff;
+}
+.footerLogo {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+.footerLinks li{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+.footerLinks li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.mainFooter {
+    margin-top: 70px;
+}
+#copyRight {
+    color: var(--bs-dark-gray);
+    font-size: 0.9rem;
+}
+
+.accordion-body {
+    padding: 50px 20px;
+}
+
+.table-rounded > :not(caption) > * > * {
+    --bs-table-bg: var(--bs-light-sub);
+}
+
+.table-rounded .table-dark th {
+    --bs-table-bg: var(--bs-primary) !important;
+}
+
+.pageContent h2,
+.contactText h2,
+h3 {
+    color: var(--bs-accent-sub);
+}
+
+.btn.btn-link {
+    color: var(--bs-accent-sub);
+}
+
+body.dashboard-body .info-card li::before,
+body.dashboard-body .info-card li a,
+body.dashboard-body .info-card li:hover::before {
+    color: var(--bs-primary);
+}
+
+body.dashboard-body .info-card li:hover a {
+    color: var(--bs-body-color);
+}
+
+body.dashboard-body-login .card a,
+body.dashboard-body-signup .card a,
+body.dashboard-body-forgot-password .card a,
+.logout-button {
+    color: var(--bs-primary);
+}
+.content-link {
+    color: var(--bs-primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+.text-primary {
+    color: var(--bs-primary) !important;
+}
+
+.dashboard-body-risk-and-compliance-tools .squareBox .squareBoxTitle{
+    font-size: 1.5rem;
+}
+.dashboard-body-risk-and-compliance-tools .squareBox .squareBoxText{
+    font-size: 1rem;
+}
+.dashboard-body-risk-and-compliance-tools .mainRow {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.dashboard-body-risk-and-compliance-tools  .squareBox {
+    padding: 25px
+}

@@ -1,0 +1,148 @@
+:root {
+  /* Core Theme Colors */
+  --bs-primary: #662cca !important;
+  --bs-accent-sub: #401884;
+  --bs-light-sub: #E0D4F2;
+  --bs-dark-sub: #322E38;
+  --bs-heading-color: #352E41;
+  --bs-highlight-sub: rgba(155, 94, 255, 0.2);
+  --bs-card-shadow: rgba(102, 44, 202, 0.15);
+  --bs-hover-sub: #5a21b3;
+  --bs-dark-gray: #D2CDDA;
+  --bs-dark-rgba:var(--bs-dark-sub);
+  --bs-footer: #3E3A45;
+  --bs-nav-link-color:  var(--bs-primary);
+  
+  /* Bootstrap Defaults */
+  --bs-body-bg: #fff;
+  --bs-body-color: #352E41;
+  --bs-body-secondary-color: #352E41;
+  --bs-body-secondary-bg: #ffffff;
+  --bs-body-tertiary-color: #495057;
+  --bs-body-tertiary-bg: #e9ecef;
+
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+
+  --bs-link-color-rgb: #662cca !important;
+
+  /* Borders and Shadows */
+  --bs-border-color: #dee2e6;
+  --bs-border-width: 1px;
+  --bs-border-radius: 0.375rem;
+  --bs-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+  /* Buttons */
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-color: #fff;
+  --bs-btn-hover-bg: var(--bs-hover-sub);
+  --bs-btn-border-color: var(--bs-primary);
+
+  /* Forms */
+  --bs-input-bg: #fff;
+  --bs-input-color: #212529;
+  --bs-input-border-color: #ced4da;
+  --bs-input-placeholder-color: #6c757d;
+
+  /* Cards */
+  --bs-card-bg: #fff;
+  --bs-card-border-color: rgba(0, 0, 0, 0.125);
+  --bs-card-color: var(--bs-heading-color);
+  --bs-card-shadow: var(--bs-box-shadow);
+
+  /* Tables */
+  --bs-table-bg: transparent;
+  --bs-table-color: var(--bs-heading-color);
+  --bs-table-border-color: rgba(0, 0, 0, 0.125);
+
+  /* Navbar */
+  --bs-navbar-bg: var(--bs-dark);
+  --bs-navbar-color: #fff;
+  --bs-navbar-brand-color: #fff;
+
+  /* Dropdowns */
+  --bs-dropdown-bg: #fff;
+  --bs-dropdown-border-color: rgba(0, 0, 0, 0.15);
+  --bs-dropdown-divider-bg: #e9ecef;
+
+  /* Modals */
+  --bs-modal-bg: #fff;
+  --bs-modal-border-color: rgba(0, 0, 0, 0.2);
+  --bs-modal-header-bg: var(--bs-body-bg);
+  --bs-modal-footer-bg: var(--bs-body-bg);
+
+  /* Popovers */
+  --bs-popover-bg: #fff;
+  --bs-popover-border-color: rgba(0, 0, 0, 0.2);
+
+  /* Tooltips */
+  --bs-tooltip-bg: #000;
+  --bs-tooltip-color: #fff;
+
+  /* Offcanvas */
+  --bs-offcanvas-bg: var(--bs-body-bg);
+  --bs-offcanvas-border-color: var(--bs-border-color);
+
+  /* Accordion */
+  --bs-accordion-bg: #fff;
+  --bs-accordion-border-color: var(--bs-border-color);
+
+  /* Spacing */
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+
+  /* Fonts */
+  font-family: var(--font-poppins), sans-serif;
+}
+
+/* Primary Button Styles */
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--bs-accent-sub);
+  --bs-btn-hover-border-color: var(--bs-accent-sub);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--bs-primary);
+  --bs-btn-active-border-color: var(--bs-primary);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--bs-primary);
+  --bs-btn-disabled-border-color: var(--bs-primary);
+  --bs-btn-disabled-opacity: 0.65;
+}
+
+/* Secondary Button Variant */
+.btn-primaryNew {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--bs-accent-sub);
+  --bs-btn-border-color: var(--bs-accent-sub);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--bs-primary);
+  --bs-btn-hover-border-color: var(--bs-primary);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--bs-primary);
+  --bs-btn-active-border-color: var(--bs-primary);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--bs-primary);
+  --bs-btn-disabled-border-color: var(--bs-primary);
+  --bs-btn-disabled-opacity: 0.65;
+}
+.accordion {
+  --bs-accordion-color: var(--bs-body-color);
+  --bs-accordion-bg: var(--bs-body-bg);
+  --bs-accordion-btn-color: var(--bs-body-color);
+  --bs-accordion-btn-bg: var(--bs-accordion-bg);
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  --bs-accordion-active-color: var(--bs-body-color);
+  --bs-accordion-active-bg: var(--bs-light-sub);
+}

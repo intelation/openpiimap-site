@@ -1,0 +1,174 @@
+.btn-primary, .btn-primaryNew {
+    padding: 10px 25px;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem; 
+}
+
+btn-primary .bi-arrow-right-short, .btn-primaryNew .bi-arrow-right-short {
+    padding-top: 2px;
+}
+
+.mainRow {
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+.firstRow {
+    min-height: calc(100vh - 130px); /* Adjust 80px if your header height differs */
+    display: flex;
+    align-items: center;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    justify-content: center;
+    padding: 40px 2rem;
+  }
+#mainText {
+    text-align: center;
+}
+
+h1 .highlight {
+    display: block;
+}
+
+.intelationText {
+    font-size: 2.7rem;
+    color: var(--bs-accent-sub);
+    font-weight: 600;
+    margin: 0;
+}
+
+#mainText h2 {
+    font-size: 1.6rem;
+    color: var(--bs-heading-color);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+.actions {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;     
+}
+.custom-bullet-list {
+    list-style: disc;
+    padding-left: 1.2rem;
+  }
+  
+  .custom-bullet-list li {
+    margin-bottom: 0.5rem;
+  }
+  .nav-tabs {
+    --bs-nav-tabs-border-color: var(--bs-border-color);
+    --bs-nav-tabs-link-active-color: #fff;
+    --bs-nav-tabs-link-active-bg:var(--bs-accent-sub);
+    border: none;
+  }
+  .nav-tabs .nav-link {
+    background: var(--bs-primary);
+    margin-right: 10px;
+    font-size: 0.9rem;
+    padding: 5px 20px !important;
+  }
+  .nav-tabs  .nav-item .nav-link {
+    color: #fff;
+  }
+  .tab-content {
+    background: #ffffff;
+  }
+
+  .sticky-industry-nav {
+    position: sticky;
+    z-index: 10;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    top: 70px; 
+
+  }
+  .sticky-industry-nav.stickyN {
+    position: sticky;
+    top: 70px; 
+    z-index: 1000;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-sticky {
+    border-radius: 10px 10px 0 0;
+    background: var(--bs-primary);
+  }
+  .btn-sticky.active {
+    background: var(--bs-accent-sub) !important;
+  }
+  .useCaseSection img {
+    max-width: 90%;
+    height: auto;
+  }
+ .blog-sidebar {
+    background: #ffffff;
+    margin-top: 250px;
+}
+.blog-sidebar a {
+    color: var(--bs-accent-sub);
+    text-decoration: none;
+}
+.blog-sidebar a .bsicon {
+  margin-right: 10px;
+  display: inline-block;
+}
+.blogArticle {
+  padding: 50px 100px 50px 0;
+}
+.blogArticle h2 {
+  margin: 70px 0 20px;
+}
+.blogArticle h3 {
+  margin: 40px 0 10px;
+  font-size: 1.3rem;
+}
+.blogArticle h4 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.blogArticle table {
+  margin: 40px 0;
+  border-collapse: collapse;
+  border: solid 1px #d0eaf2;
+}
+.blogArticle table th, .blogArticle table td  {
+  padding: 5px;
+  vertical-align: top;
+}
+.blogLink {
+  color: var(--bs-accent-sub);
+  text-decoration: none;
+}
+.blogArticle table thead tr th{
+  background-color: #d0eaf2;
+    border: solid 2px #fff;
+ 
+}
+.blogArticle table tr:nth-child(even), .blogArticle table tr:nth-child(even) td {
+  background-color: #d0eaf2;
+    border: solid 2px #fff;
+
+}
+
+.blogArticle table tr:nth-child(odd), .blogArticle table tr:nth-child(odd) td {
+  background-color: #f4fcff;
+    border: solid 2px #fff;
+
+}
+.blogArticle .blog-image {
+  max-width: 80%;
+  height: auto;
+  margin: 20px 0;
+}
+.blogArticle .blogList li{
+  list-style: disc;
+  margin-bottom: 10px;
+}

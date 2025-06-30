@@ -1,0 +1,18 @@
+@import './_variables.css';
+@import './_global.css';
+@import './_header.css';
+@import './_cookiemanager.css';
+@import './_cards.css';
+@import './_components.css';
+@import './_dashboard.css';
+@import './_responsive.css';
+
+/* Global styles: styles/globals.css */
+.dot-step {
+  width: 16px;
+  height: 16px;
+  background-color: var(--bs-primary);
+  border: 0px solid var(--bs-accent-sub);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--bs-highlight-sub);
+}

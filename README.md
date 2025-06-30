@@ -80,4 +80,3 @@ This website supports the OpenPIIMap GitHub repository and is open to contributi
 MIT © [Intelation](https://intelation.com)
 
 
-

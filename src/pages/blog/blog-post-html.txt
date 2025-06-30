@@ -1,0 +1,57 @@
+import Head from 'next/head';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import BlogSidebar from '@/components/blog/BlogSidebar';
+import Image from 'next/image';
+
+export default function BlogTemplate() {
+    return (
+        <>
+            <Head>
+                <title>Blog Title Here</title>
+                <meta
+                    name="description"
+                    content="Meta description for this blog post."
+                />
+                <meta
+                    name="keywords"
+                    content="comma, separated, keywords"
+                />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://www.intelation.com/blog/post-slug" />
+
+                {/* Social Metadata */}
+                <meta property="og:title" content="Blog Title Here" />
+                <meta property="og:description" content="Open graph description here." />
+                <meta property="og:image" content="https://www.intelation.com/images/og-image-blog.jpg" />
+                <meta property="og:url" content="https://www.intelation.com/blog/post-slug" />
+                <meta property="og:type" content="article" />
+
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Blog Title Here" />
+                <meta name="twitter:description" content="Twitter description here." />
+                <meta name="twitter:image" content="https://www.intelation.com/images/og-image-blog.jpg" />
+            </Head>
+            <div id="nextjs">
+                <Header />
+                <main className="container my-5 blogPost m-5">
+                    <div className="row">
+                        <article className="col-9 blogArticle">
+                            <h1 className="mb-4">Blog Title Here</h1>
+                            <p className="text-muted mb-4">Published: Month Year · X min read</p>
+
+                            {/* Content Sections Go Here */}
+
+                        </article>
+
+                        <BlogSidebar
+                            shareUrl="https://www.intelation.com/blog/post-slug"
+                            title="Blog Title Here"
+                        />
+                    </div>
+                </main>
+                <Footer />
+            </div>
+        </>
+    );
+}

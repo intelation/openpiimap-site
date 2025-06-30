@@ -1,0 +1,73 @@
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import Head from 'next/head';
+import BlogCardGrid from '@/components/blog/BlogCardGrid';
+
+export default function BlogIndex() {
+  const schemaMarkup = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Intelation Blog",
+    "description": "Insights on data anonymization, AI privacy, compliance strategy, and data security best practices.",
+    "url": "https://www.intelation.com/blogs",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Intelation"
+    }
+  };
+
+  return (
+    <>
+      <Head>
+        {/* SEO Meta Tags */}
+        <title>Intelation Blog | Data Anonymization, AI Privacy & Compliance Insights</title>
+        <meta
+          name="description"
+          content="Read expert insights and updates on real-time data anonymization, GDPR/HIPAA compliance, AI privacy, and secure data practices from Intelation."
+        />
+        <meta
+          name="keywords"
+          content="data anonymization blog, AI privacy, GDPR compliance, HIPAA security, privacy trends, enterprise data security"
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.intelation.com/blogs" />
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Intelation Blog | Data Anonymization & Privacy Insights" />
+        <meta property="og:description" content="Explore expert perspectives on secure data practices, anonymization techniques, and evolving compliance regulations." />
+        <meta property="og:image" content="https://www.intelation.com/images/og-image-blog.jpg" />
+        <meta property="og:url" content="https://www.intelation.com/blogs" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Intelation Blog | Data Anonymization & Privacy Insights" />
+        <meta name="twitter:description" content="Stay informed on AI privacy, compliance automation, and anonymization trends with Intelation's expert blog." />
+        <meta name="twitter:image" content="https://www.intelation.com/images/og-image-blog.jpg" />
+
+        {/* Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
+        />
+      </Head>
+
+      <div id='nextjs'>
+        <Header />
+
+        <main className="container-fluid mainWrapper">
+          <div className="row align-center mainRow">
+            <section id="mainText" className="col-lg-12 poppins-bold">
+              <h1>Intelation Blog</h1>
+              <p>Explore expert articles on data anonymization, AI privacy, and enterprise-grade compliance strategies.</p>
+            </section>
+          </div>
+
+          <BlogCardGrid />
+        </main>
+
+        <Footer />
+      </div>
+    </>
+  );
+}

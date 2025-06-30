@@ -1,0 +1,121 @@
+/* ===========================
+   Header Layout
+=========================== */
+.mainHeader {
+  background: url(/images/header.jpg) no-repeat center center;
+  background-size: cover;
+  position: sticky;
+  top: 0;
+  z-index: 1050;
+  width: 100%;
+  padding-top: 1.5rem ;
+  padding-bottom: 1.5rem;
+  transition: padding 0.3s ease;
+}
+.mainHeader.sticky {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.logo-area {
+  flex-shrink: 0;
+}
+
+.mainNavbar {
+  flex-grow: 1;
+  margin-top: 5px;
+}
+
+/* ===========================
+   Logo & Text
+=========================== */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+img.logo-web {
+  display: block;
+}
+
+p.logo-text {
+  color: var(--bs-accent-sub);
+  margin-bottom: 0;
+  font-size: 36px;
+}
+
+/* ===========================
+   Navbar
+=========================== */
+.navbar-toggler {
+  --bs-navbar-color: var(--bs-accent-sub);
+  border-color: var(--bs-accent-sub);
+}
+
+.navbar {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23401884' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px;
+}
+body .nav-link {
+  --bs-nav-link-color: var(--bs-accent-sub);
+  --bs-nav-link-hover-color: rgb(0, 0, 0);
+  font-weight: 400;
+  font-size: 16px;
+  padding: 8px 10px !important;
+  white-space: nowrap;
+}
+
+body .active-link, body .nav-link:hover {
+  background: var(--bs-accent-sub) !important;
+  border-radius: 8px;
+  color: #fff;
+}
+
+/* ===========================
+   Responsive Tweaks
+=========================== */
+@media (min-width: 992px) and (max-width: 1200px) {
+  body .nav-link {
+    font-size: 16px;
+    padding: 6px 8px !important;
+  }
+
+  body .navbar-nav {
+    gap: 6px;
+  }
+}
+
+@media (max-width: 992px) {
+  .logo-web {
+    width: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .mainNavbar .offcanvas-body {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mainNavbar .navbar-nav {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
