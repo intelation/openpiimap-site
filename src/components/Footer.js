@@ -2,41 +2,33 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="mainFooter py-4 pb-0">
+    <footer className="mainFooter border-top py-4 bg-light text-center text-muted small">
       <div className="container">
-        <div className="row mb-4">
-          {/* Project Info */}
-          <div className="col-md-8">
-            <p className="poppins-semibold footerLogo">OpenPIIMap</p>
-            <p>Open-source map of sensitive data definitions under global privacy laws.</p>
-            <div className="d-flex gap-3 mt-3 mb-4 footerSocialIcons">
-              <Link href="https://github.com/intelation/openpiimap" target="_blank" title="GitHub">
-                <i className="bi bi-github fs-4"></i>
-              </Link>
-              <Link href="https://linkedin.com/company/intelation1" target="_blank" title="LinkedIn">
-                <i className="bi bi-linkedin fs-4"></i>
-              </Link>
-            </div>
-          </div>
 
-          {/* Navigation Links */}
-          <div className="col-md-2">
-            <ul className="list-unstyled footerLinks">
-              <li><Link href="/coverage">Coverage</Link></li>
-              <li><Link href="/contribute">Contribute</Link></li>
-             
-            </ul>
-          </div>
-
-          
+        {/* Social Icons */}
+        <div className="mb-2">
+          <Link href="https://github.com/intelation/openpiimap" target="_blank" className="text-muted me-3" title="GitHub">
+            <i className="bi bi-github fs-5"></i>
+          </Link>
         </div>
 
-        {/* Copyright */}
-        <div className="row pt-3 pb-1">
-          <div className="col text-center">
-            <p id="copyRight">&copy; 2025 OpenPIIMap. Built by the privacy community. Powered by <Link href="https://intelation.com" target="_blank">Intelation</Link>.</p>
-          </div>
+        {/* Navigation Links */}
+        <div className="mb-2">
+          <Link href="/coverage" className="text-muted me-3 text-decoration-none">Coverage</Link>
+          <Link href="/contribute" className="text-muted me-3 text-decoration-none">Contribute</Link>        
         </div>
+
+        {/* Attribution */}
+        <div>
+          <p className="mb-0">
+            &copy; 2025 OpenPIIMap — Built by the privacy community.
+            <br />
+            <span className="text-muted">
+              Powered by <Link href="https://intelation.com" target="_blank" className="text-muted text-decoration-underline">Intelation</Link>
+            </span>
+          </p>
+        </div>
+        
       </div>
     </footer>
   );
